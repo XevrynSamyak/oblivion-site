@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Credits — Oblivion</title>
+<meta name="description" content="Oblivion v2 is my own work, but it did not come from nowhere. These are the projects and people whose tools and ideas shaped it." />
+<meta name="theme-color" content="#060b1c" />
+<meta property="og:title" content="Credits — Oblivion" />
+<meta property="og:description" content="Built with help. Credited properly." />
+<meta property="og:type" content="website" />
+<link rel="stylesheet" href="/assets/site.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-112 -112 224 224'%3E%3Cpath d='M 42.69 -97.63 L 42.69 -58.89 L 42.56 -58.91 A 8.63 8.63 0 0 1 38.64 -52.71 L 38.63 -52.72 L -8.03 -19.55 L -7.75 -19.12 A 20.79 20.79 0 0 0 -14.89 -11.39 L -15.41 -11.66 L -20.68 -1.17 L -22.81 7.84 L -22.42 17.97 L -18.87 37.10 L -45.17 19.53 L -45.07 19.40 A 5.74 5.74 0 0 1 -48.77 13.84 L -49.01 13.83 L -49.01 -32.02 L -48.43 -32.04 A 7.58 7.58 0 0 1 -44.25 -39.10 L -44.49 -39.43 L 36.22 -98.61 L 36.60 -98.32 A 3.36 3.36 0 0 1 42.98 -97.69 Z' fill='%235b8cff' /%3E%3Cpath d='M 38.08 -33.79 L 84.02 -3.10 L 83.76 -2.69 A 5.51 5.51 0 0 1 87.06 3.43 L 87.40 3.56 L 86.94 93.68 L 87.04 93.68 A 3.08 3.08 0 0 1 81.75 95.73 L 81.55 95.85 L 56.81 79.61 L 56.92 79.45 A 4.98 4.98 0 0 1 53.51 73.99 L 52.99 73.91 L 52.91 32.78 L 50.36 23.88 L 45.45 14.44 L 38.35 6.11 L 7.99 -14.74 L 7.93 -14.68 A 2.42 2.42 0 0 1 8.70 -19.35 L 8.62 -19.47 L 30.00 -34.44 L 30.06 -34.36 A 6.22 6.22 0 0 1 37.98 -33.63 Z' fill='%235b8cff' /%3E%3Cpath d='M -56.20 22.64 L -11.88 51.81 L -11.63 51.39 A 31.27 31.27 0 0 0 7.09 55.51 L 7.16 55.90 L 18.51 52.74 L 27.18 47.92 L 40.47 34.54 L 40.20 34.21 A 3.02 3.02 0 0 1 44.80 37.48 L 45.10 37.55 L 44.97 65.22 L 44.25 65.22 A 6.17 6.17 0 0 1 41.03 71.40 L 41.12 71.56 L 3.13 98.38 L 2.97 98.17 A 6.62 6.62 0 0 1 -5.32 98.15 L -5.44 98.27 L -85.49 44.84 L -85.37 44.64 A 3.53 3.53 0 0 1 -85.43 38.22 L -85.55 38.09 L -63.22 22.55 L -62.96 22.86 A 5.08 5.08 0 0 1 -56.41 22.86 Z' fill='%235b8cff' /%3E%3C/svg%3E" />
+<script>
+  /* Inline and parser-blocking on purpose: the flood's origin has to be on
+     :root before the view transition's first frame, and site.js is a module
+     — deferred, so it runs long after that moment. */
+  try {
+    var o = sessionStorage.getItem('oblivion:origin');
+    if (o) document.documentElement.style.setProperty('--vt-origin', o);
+  } catch (e) {}
+</script>
+</head>
+<body>
+
+<!-- The fluid field and every glass body are drawn here, in one WebGL2 pass,
+     so the glass refracts the live field instead of a screenshot of it. -->
+<canvas id="field" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+
+<a class="skip" href="#credits">Skip to the credits</a>
+
+<header class="masthead" id="masthead">
+  <a class="brand" href="/" aria-label="Oblivion, home">
+    <svg class="mark" viewBox="-112 -112 224 224" aria-hidden="true">
+      <defs>
+        <linearGradient id="markInk" x1="-104" y1="-104" x2="94" y2="106" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#FFFFFF" />
+          <stop offset=".55" stop-color="#F2ECFF" />
+          <stop offset="1" stop-color="#A9CBFF" />
+        </linearGradient>
+      </defs>
+      <g fill="url(#markInk)"><path d="M 42.69 -97.63 L 42.69 -58.89 L 42.56 -58.91 A 8.63 8.63 0 0 1 38.64 -52.71 L 38.63 -52.72 L -8.03 -19.55 L -7.75 -19.12 A 20.79 20.79 0 0 0 -14.89 -11.39 L -15.41 -11.66 L -20.68 -1.17 L -22.81 7.84 L -22.42 17.97 L -18.87 37.10 L -45.17 19.53 L -45.07 19.40 A 5.74 5.74 0 0 1 -48.77 13.84 L -49.01 13.83 L -49.01 -32.02 L -48.43 -32.04 A 7.58 7.58 0 0 1 -44.25 -39.10 L -44.49 -39.43 L 36.22 -98.61 L 36.60 -98.32 A 3.36 3.36 0 0 1 42.98 -97.69 Z" /><path d="M 38.08 -33.79 L 84.02 -3.10 L 83.76 -2.69 A 5.51 5.51 0 0 1 87.06 3.43 L 87.40 3.56 L 86.94 93.68 L 87.04 93.68 A 3.08 3.08 0 0 1 81.75 95.73 L 81.55 95.85 L 56.81 79.61 L 56.92 79.45 A 4.98 4.98 0 0 1 53.51 73.99 L 52.99 73.91 L 52.91 32.78 L 50.36 23.88 L 45.45 14.44 L 38.35 6.11 L 7.99 -14.74 L 7.93 -14.68 A 2.42 2.42 0 0 1 8.70 -19.35 L 8.62 -19.47 L 30.00 -34.44 L 30.06 -34.36 A 6.22 6.22 0 0 1 37.98 -33.63 Z" /><path d="M -56.20 22.64 L -11.88 51.81 L -11.63 51.39 A 31.27 31.27 0 0 0 7.09 55.51 L 7.16 55.90 L 18.51 52.74 L 27.18 47.92 L 40.47 34.54 L 40.20 34.21 A 3.02 3.02 0 0 1 44.80 37.48 L 45.10 37.55 L 44.97 65.22 L 44.25 65.22 A 6.17 6.17 0 0 1 41.03 71.40 L 41.12 71.56 L 3.13 98.38 L 2.97 98.17 A 6.62 6.62 0 0 1 -5.32 98.15 L -5.44 98.27 L -85.49 44.84 L -85.37 44.64 A 3.53 3.53 0 0 1 -85.43 38.22 L -85.55 38.09 L -63.22 22.55 L -62.96 22.86 A 5.08 5.08 0 0 1 -56.41 22.86 Z" /></g>
+    </svg>
+    <span class="wordmark">Oblivion</span>
+  </a>
+  <nav class="masthead-nav" aria-label="Pages">
+    <a href="/">Home</a>
+    <a href="/purchase/">Pricing</a>
+    <a href="/credits/" aria-current="page">Credits</a>
+    <a class="pill pill-sm glass masthead-cta" href="https://discord.gg/WC8zdytZTE" target="_blank" rel="noopener">Discord</a>
+  </nav></header>
+
+<section class="act act-credits page-top" id="credits">
+  <div class="credits-inner">
+    <div class="ledger-head">
+      <p class="eyebrow" data-rise>Credits</p>
+      <h2 class="heading lines">
+        <span class="line"><span>Built with help.</span></span>
+        <span class="line"><span class="lit" style="--d:.09s">Credited properly.</span></span>
+      </h2>
+      <p class="lede" data-rise style="--d:.2s">
+        Oblivion v2 is my own work, but it did not come from nowhere. These
+        are the projects and people whose tools and ideas shaped it. A lot of
+        scripts never say where their ideas came from, so here is the honest
+        list.
+      </p>
+    </div>
+
+    <div class="credit-group glass" data-rise>
+      <h3 class="credit-head">Tools inside Oblivion</h3>
+      <dl class="credit-list">
+        <div><dt>Rayfield Gen2</dt><dd>The switch and colour picker elements used across the menu.</dd></div>
+        <div><dt>LuaProt</dt><dd>Protects the script. I chose it after seeing Novoline, a popular script, run on it with a trusted community behind it.</dd></div>
+        <div><dt>SoundCloud</dt><dd>Powers the Music tab. An amazing catalogue to build on.</dd></div>
+      </dl>
+    </div>
+
+    <div class="credit-group glass" data-rise>
+      <h3 class="credit-head">Ideas that inspired a feature</h3>
+      <dl class="credit-list">
+        <div><dt>Orca</dt><dd>Script thumbnails while loading, and the friend activity idea.</dd></div>
+        <div><dt>Sirius</dt><dd>The dock, the Players tab and the Settings layout.</dd></div>
+        <div><dt>AK Admin</dt><dd>The idea behind the server browser.</dd></div>
+        <div><dt>Phantom</dt><dd>The idea for a Music tab, and a lot of help on the Cmds tab.</dd></div>
+        <div><dt>Novoline</dt><dd>The single-page layout of this website. I liked how their site kept everything on one page and built mine the same way.</dd></div>
+      </dl>
+    </div>
+
+    <div class="credit-group glass" data-rise>
+      <h3 class="credit-head">Commands</h3>
+      <dl class="credit-list">
+        <div><dt>Written for Oblivion</dt><dd>The Cmds tab and its command system are my own. A handful of individual commands were adapted from the admin scripts that shaped the scene: Infinite Yield, CMD-X, Nameless Admin and Novoline.</dd></div>
+        <div><dt>Phantom and Dreaming</dt><dd>Phantom (@phantomvail) and Dreaming (@n.cir) helped me build the commands and tested them over and over until they worked properly.</dd></div>
+      </dl>
+    </div>
+
+    <div class="credit-group glass" data-rise>
+      <h3 class="credit-head">The Chat tab</h3>
+      <dl class="credit-list">
+        <div><dt>Carried over from SYNC</dt><dd>I first built a global chat for SYNC, my earlier project, so bringing it to Oblivion felt natural.</dd></div>
+      </dl>
+    </div>
+
+    <div class="credit-group glass" data-rise>
+      <h3 class="credit-head">Performance</h3>
+      <dl class="credit-list">
+        <div><dt>Gladius</dt><dd>@ironbrew1 is the one who recommended the macros that fixed the lag.</dd></div>
+      </dl>
+    </div>
+
+    <div class="note glass" data-rise>
+      <h3 class="heading">A note from me.</h3>
+      <p>
+        Credit matters to me. Every name on this page helped make Oblivion
+        better, and I would rather say that openly than pretend it all
+        appeared on its own. Thank you to every developer behind these
+        projects, your work taught me a lot.
+      </p>
+      <p>
+        Oblivion still has bugs and rough edges. I know, and I am fixing them
+        one by one. If something is broken, a credit is missing, or you just
+        have a thought, tell me below. I read every message.
+      </p>
+    </div>
+
+    <form class="feedback glass" id="feedback" data-rise>
+      <div class="swap" role="group" aria-label="Kind of feedback">
+        <button type="button" class="swap-opt" data-kind="feedback" aria-pressed="true">Feedback</button>
+        <button type="button" class="swap-opt" data-kind="credit" aria-pressed="false">Missing credit</button>
+        <button type="button" class="swap-opt" data-kind="bug" aria-pressed="false">Bug report</button>
+      </div>
+      <label class="sr-only" for="message">Your message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Tell me what is on your mind." required></textarea>
+      <div class="feedback-foot">
+        <p class="feedback-note" id="feedbackNote"></p>
+        <button type="submit" class="pill glass" data-glass>Send feedback</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="colophon">
+  <span class="wordmark wordmark-sm">Oblivion</span>
+  <p>Not affiliated with Roblox Corporation.</p>
+  <p class="rule">© 2026</p>
+</footer>
+
+<script src="/assets/site.js" type="module"></script>
+</body>
+</html>
