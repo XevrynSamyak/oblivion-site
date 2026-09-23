@@ -19,7 +19,7 @@ serve.mjs             static server with directory indexes
 node serve.mjs
 ```
 
-Open <http://localhost:4173>. `/purchase/` resolves to
+Open (https://oblivion-site.vercel.app/). `/purchase/` resolves to
 `purchase/index.html`. Asset paths are root-absolute, so the site expects to
 live at a domain root rather than in a subfolder. Edits are live on reload.
 
